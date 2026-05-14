@@ -54,12 +54,11 @@ public:
         {
             cout << "List is empty." << endl;
         }
-    else
+        else
         {
             Node *current = top;
             while (current != NULL)
             {
-{
                 cout << current->data << " " << endl;
                 current = current->next;
             }
@@ -67,7 +66,7 @@ public:
         }
     }
 
-     bool isEmpty()
+    bool isEmpty()
     {
         return top == NULL;
     }
@@ -80,10 +79,10 @@ int main()
     int choice = 0;
     int value;
 
-while (choice != 5)
+    while (choice != 5)
     {
 
-         cout << "1.push\n";
+        cout << "1.push\n";
         cout << "2.pop\n";
         cout << "3.peek\n";
         cout << "4.Exit\n";
@@ -97,7 +96,7 @@ while (choice != 5)
             cin >> value;
             stack.push(value);
             break;
-    case 2:
+        case 2:
             if (!stack.isEmpty())
             {
                 stack.pop();
@@ -107,8 +106,7 @@ while (choice != 5)
                 cout << "Stack is empty. Cannot pop." << endl;
             }
             break;
-
-    case 3:
+        case 3:
             if (!stack.isEmpty())
             {
                 stack.peek();
